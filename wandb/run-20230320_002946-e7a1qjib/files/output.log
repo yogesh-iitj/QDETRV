@@ -1,0 +1,10 @@
+
+2023-03-20 00:29:50,899 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Training started
+Traceback (most recent call last):
+  File "/data1/yogesh/one-shot-det-vid/qdetr/train.py", line 121, in <module>
+    main()
+  File "/data1/yogesh/one-shot-det-vid/qdetr/train.py", line 114, in main
+    run()
+  File "/data1/yogesh/one-shot-det-vid/qdetr/train.py", line 71, in run
+    wandb.watch(model, criterion, optimizer, scheduler, log="all")
+TypeError: watch() got multiple values for argument 'log'

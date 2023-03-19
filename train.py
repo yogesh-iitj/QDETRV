@@ -17,6 +17,19 @@ import torch
 from torch import nn
 import pandas as pd
 
+import wandb
+
+wandb.init(project='one-shot-vid-det', entity='yogeshiitj')
+
+# config = dict(
+#     epochs=5,
+#     classes=10,
+#     kernels=[16, 32],
+#     batch_size=128,
+#     learning_rate=0.005,
+#     dataset="MNIST",
+#     architecture="CNN")
+
 def collate_fn(batch):
     return tuple(zip(*batch))
 
@@ -55,7 +68,7 @@ def run():
    
     model.to(device)
     criterion.to(device)
-
+    wandb.watch(model, criterion, log="all")
     best_loss = 10**6
     # file=open('/data1/yogesh/one-shot-det-vid/qdetr/logs/logs.txt', 'a')
 
@@ -69,10 +82,11 @@ def run():
 
         train_loss = engine.train_fn(train_loader, model, criterion, optimizer, device, epoch)
         valid_loss = engine.eval_fn(val_loader, model, criterion, device)
-        scheduler.step(valid_loss.avg)
+        # scheduler.step(valid_loss.avg)
         # print(f"Epoch={epoch}, Train Loss={train_loss}, Val Loss={valid_loss}")
 
         print('|EPOCH {}| TRAIN_LOSS {}| VALID_LOSS {}|'.format(epoch+1,train_loss.avg,valid_loss.avg))
+        wandb.log({'epoch': epoch+1, 'train loss': train_loss.avg, 'val loss': valid_loss.avg })
         logger.info('|EPOCH {}| TRAIN_LOSS {}| VALID_LOSS {}|'.format(epoch+1,train_loss.avg,valid_loss.avg))
 
         # file.write(f'|EPOCH {epoch+1}| TRAIN_LOSS {train_loss.avg}| VALID_LOSS {valid_loss.avg}\n')

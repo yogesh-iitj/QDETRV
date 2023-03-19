@@ -1,0 +1,103 @@
+2023-03-20 00:30:30,945 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Training started
+2023-03-20 00:30:32,505 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: ***** Running training *****
+2023-03-20 00:30:32,505 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Num examples = 800
+2023-03-20 00:30:32,505 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Num Epochs = 100
+2023-03-20 00:30:32,505 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Number of GPUs = 2
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████| 7/7 [00:16<00:00,  2.42s/it, loss=2.52]
+  0%|                                                                                                                  | 0/2 [00:00<?, ?it/s]
+|EPOCH 1| TRAIN_LOSS 2.519940069743565| VALID_LOSS 2.611825466156006|
+100%|███████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:03<00:00,  1.94s/it, loss=2.61]
+  0%|                                                                                                                  | 0/7 [00:00<?, ?it/s]
+Best model found at Epoch 1........Saving Model
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████| 7/7 [00:12<00:00,  1.76s/it, loss=2.35]
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:03<00:00,  1.63s/it, loss=2.58]
+|EPOCH 2| TRAIN_LOSS 2.351043088095529| VALID_LOSS 2.584048271179199|
+2023-03-20 00:31:10,198 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: |EPOCH 2| TRAIN_LOSS 2.351043088095529| VALID_LOSS 2.584048271179199|
+Best model found at Epoch 2........Saving Model
+100%|███████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:03<00:00,  1.95s/it, loss=2.58]
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████| 7/7 [00:12<00:00,  1.84s/it, loss=2.31]
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:04<00:00,  2.07s/it, loss=2.56]
+|EPOCH 3| TRAIN_LOSS 2.3119287150246755| VALID_LOSS 2.5611218214035034|
+2023-03-20 00:31:27,771 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: |EPOCH 3| TRAIN_LOSS 2.3119287150246755| VALID_LOSS 2.5611218214035034|
+Best model found at Epoch 3........Saving Model
+2023-03-20 00:31:28,191 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Best model found at Epoch 3........Saving Model
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████| 7/7 [00:12<00:00,  1.86s/it, loss=2.27]
+  0%|                                                                                                                  | 0/2 [00:00<?, ?it/s]
+|EPOCH 4| TRAIN_LOSS 2.2718652316502164| VALID_LOSS 2.5531550645828247|
+2023-03-20 00:31:44,861 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: |EPOCH 4| TRAIN_LOSS 2.2718652316502164| VALID_LOSS 2.5531550645828247|
+Best model found at Epoch 4........Saving Model
+100%|███████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:03<00:00,  1.78s/it, loss=2.55]
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████| 7/7 [00:13<00:00,  1.88s/it, loss=2.24]
+
+ 50%|███████████████████████████████████████████████▌                                               | 1/2 [00:03<00:03,  3.56s/it, loss=2.56]
+|EPOCH 5| TRAIN_LOSS 2.236471312386649| VALID_LOSS 2.5260443687438965|
+2023-03-20 00:32:02,576 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: |EPOCH 5| TRAIN_LOSS 2.236471312386649| VALID_LOSS 2.5260443687438965|
+Best model found at Epoch 5........Saving Model
+2023-03-20 00:32:02,980 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Best model found at Epoch 5........Saving Model
+100%|███████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:04<00:00,  2.02s/it, loss=2.53]
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████| 7/7 [00:12<00:00,  1.85s/it, loss=2.2]
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:03<00:00,  1.86s/it, loss=2.52]
+|EPOCH 6| TRAIN_LOSS 2.1998787948063443| VALID_LOSS 2.5184296369552612|
+2023-03-20 00:32:19,791 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: |EPOCH 6| TRAIN_LOSS 2.1998787948063443| VALID_LOSS 2.5184296369552612|
+Best model found at Epoch 6........Saving Model
+2023-03-20 00:32:20,274 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Best model found at Epoch 6........Saving Model
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████| 7/7 [00:12<00:00,  1.82s/it, loss=2.19]
+  0%|                                                                                                                  | 0/2 [00:00<?, ?it/s]
+|EPOCH 7| TRAIN_LOSS 2.1902340820857455| VALID_LOSS 2.536627769470215|
+100%|███████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:03<00:00,  1.85s/it, loss=2.54]
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████| 7/7 [00:12<00:00,  1.82s/it, loss=2.16]
+ 50%|███████████████████████████████████████████████▌                                               | 1/2 [00:03<00:03,  3.73s/it, loss=2.56]
+Traceback (most recent call last):
+  File "/data1/yogesh/one-shot-det-vid/qdetr/train.py", line 121, in <module>
+    main()
+  File "/data1/yogesh/one-shot-det-vid/qdetr/train.py", line 114, in main
+    run()
+  File "/data1/yogesh/one-shot-det-vid/qdetr/train.py", line 84, in run
+    valid_loss = engine.eval_fn(val_loader, model, criterion, device)
+  File "/data1/yogesh/one-shot-det-vid/qdetr/engine.py", line 73, in eval_fn
+    loss_dict = criterion(output, targets)
+  File "/data1/yogesh/anaconda3/envs/detr/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/data1/yogesh/one-shot-det-vid/qdetr/detr/models/detr.py", line 225, in forward
+    indices = self.matcher(outputs_without_aux, targets)
+  File "/data1/yogesh/anaconda3/envs/detr/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/data1/yogesh/anaconda3/envs/detr/lib/python3.10/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/data1/yogesh/one-shot-det-vid/qdetr/detr/models/matcher.py", line 74, in forward
+    cost_giou = -generalized_box_iou(box_cxcywh_to_xyxy(out_bbox), box_cxcywh_to_xyxy(tgt_bbox))
+  File "/data1/yogesh/one-shot-det-vid/qdetr/./detr/util/box_ops.py", line 51, in generalized_box_iou
+    assert (boxes1[:, 2:] >= boxes1[:, :2]).all()
+KeyboardInterrupt

@@ -77,3 +77,29 @@
 2023-03-17 19:07:41,820 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: |EPOCH 4| TRAIN_LOSS 1.6078588621956962| VALID_LOSS 1.963305950164795|
 2023-03-17 19:07:59,400 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: |EPOCH 5| TRAIN_LOSS 1.5419759239469255| VALID_LOSS 1.9166219234466553|
 2023-03-17 19:07:59,819 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Best model found at Epoch 5........Saving Model
+2023-03-19 20:27:10,773 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Training started
+2023-03-19 20:27:17,103 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: ***** Running training *****
+2023-03-19 20:27:17,103 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Num examples = 800
+2023-03-19 20:27:17,104 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Num Epochs = 100
+2023-03-19 20:27:17,104 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Number of GPUs = 2
+2023-03-19 20:27:48,045 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: |EPOCH 1| TRAIN_LOSS 2.2708778040749684| VALID_LOSS 2.108649730682373|
+2023-03-19 20:27:48,512 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Best model found at Epoch 1........Saving Model
+2023-03-20 00:29:50,899 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Training started
+2023-03-20 00:30:30,945 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Training started
+2023-03-20 00:30:32,505 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: ***** Running training *****
+2023-03-20 00:30:32,505 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Num examples = 800
+2023-03-20 00:30:32,505 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Num Epochs = 100
+2023-03-20 00:30:32,505 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Number of GPUs = 2
+2023-03-20 00:30:53,410 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: |EPOCH 1| TRAIN_LOSS 2.519940069743565| VALID_LOSS 2.611825466156006|
+2023-03-20 00:30:53,833 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Best model found at Epoch 1........Saving Model
+2023-03-20 00:31:10,198 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: |EPOCH 2| TRAIN_LOSS 2.351043088095529| VALID_LOSS 2.584048271179199|
+2023-03-20 00:31:10,641 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Best model found at Epoch 2........Saving Model
+2023-03-20 00:31:27,771 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: |EPOCH 3| TRAIN_LOSS 2.3119287150246755| VALID_LOSS 2.5611218214035034|
+2023-03-20 00:31:28,191 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Best model found at Epoch 3........Saving Model
+2023-03-20 00:31:44,861 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: |EPOCH 4| TRAIN_LOSS 2.2718652316502164| VALID_LOSS 2.5531550645828247|
+2023-03-20 00:31:45,291 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Best model found at Epoch 4........Saving Model
+2023-03-20 00:32:02,576 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: |EPOCH 5| TRAIN_LOSS 2.236471312386649| VALID_LOSS 2.5260443687438965|
+2023-03-20 00:32:02,980 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Best model found at Epoch 5........Saving Model
+2023-03-20 00:32:19,791 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: |EPOCH 6| TRAIN_LOSS 2.1998787948063443| VALID_LOSS 2.5184296369552612|
+2023-03-20 00:32:20,274 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Best model found at Epoch 6........Saving Model
+2023-03-20 00:32:36,835 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: |EPOCH 7| TRAIN_LOSS 2.1902340820857455| VALID_LOSS 2.536627769470215|
