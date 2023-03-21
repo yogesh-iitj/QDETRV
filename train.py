@@ -39,7 +39,7 @@ def run():
     df = pd.read_csv(config.data_df)
     train_df, test_df = df.loc[df['split'] == 'train'], df.loc[df['split'] == 'val-new-cl']
     # val_df = train_df.sample(frac=0.2, random_state=42)
-    train_df = train_df[:1000]
+    # train_df = train_df[:1000]
     train, val = train_test_split(train_df, test_size=0.2, random_state=42)
 
     root_dir = config.root_dir
