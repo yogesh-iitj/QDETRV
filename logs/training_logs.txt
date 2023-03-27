@@ -103,3 +103,8 @@
 2023-03-20 00:32:19,791 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: |EPOCH 6| TRAIN_LOSS 2.1998787948063443| VALID_LOSS 2.5184296369552612|
 2023-03-20 00:32:20,274 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Best model found at Epoch 6........Saving Model
 2023-03-20 00:32:36,835 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: |EPOCH 7| TRAIN_LOSS 2.1902340820857455| VALID_LOSS 2.536627769470215|
+2023-03-27 08:39:34,617 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Training started
+2023-03-27 08:39:36,194 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: ***** Running training *****
+2023-03-27 08:39:36,194 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Num examples = 346558
+2023-03-27 08:39:36,194 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Num Epochs = 100
+2023-03-27 08:39:36,194 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Number of GPUs = 2

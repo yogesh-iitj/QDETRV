@@ -90,7 +90,7 @@ def run():
         logger.info('|EPOCH {}| TRAIN_LOSS {}| VALID_LOSS {}|'.format(epoch+1,train_loss.avg,valid_loss.avg))
 
         # file.write(f'|EPOCH {epoch+1}| TRAIN_LOSS {train_loss.avg}| VALID_LOSS {valid_loss.avg}\n')
-        torch.save(model.state_dict(), f'/data1/yogesh/one-shot-det-vid/qdetr/checkpoint/QGdetrF_best_no_aug{epoch+1}exp_logs.pth')
+        torch.save(model.state_dict(), f'/data1/yogesh/one-shot-det-vid/qdetr/checkpoint/QGdetrF_best_no_aug{epoch+1}exp_pre_t.pth')
         if valid_loss.avg < best_loss:
             best_loss = valid_loss.avg
             print('Best model found at Epoch {}........Saving Model'.format(epoch+1))
