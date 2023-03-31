@@ -19,7 +19,7 @@ import pandas as pd
 
 import wandb
 
-wandb.init(project='one-shot-vid-det', entity='yogeshiitj')
+wandb.init(project='one-shot-vid-det_f_data', entity='yogeshiitj')
 
 # config = dict(
 #     epochs=5,
@@ -36,16 +36,19 @@ def collate_fn(batch):
 def run():
     # creating dataloaders
     torch.cuda.empty_cache()
-    df = pd.read_csv(config.data_df)
-    train_df, test_df = df.loc[df['split'] == 'train'], df.loc[df['split'] == 'val-new-cl']
+    # df = pd.read_csv(config.data_df)
+    # train_df, test_df = df.loc[df['split'] == 'train'], df.loc[df['split'] == 'val-new-cl']
+
+    df = pd.read_csv('/data1/saswats/baseline/os2d/baselines/CoAE/data_new_open/grozi/classes/grozi_listed.csv')
+    train_df, test_df = df.loc[df['split'] == "['train']"].reset_index(drop=True), df.loc[df['split'] == "['val-new-cl']"].reset_index(drop=True) 
     # val_df = train_df.sample(frac=0.2, random_state=42)
     # train_df = train_df[:1000]
     train, val = train_test_split(train_df, test_size=0.2, random_state=42)
 
-    root_dir = config.root_dir
-    train_dataset =  dataset.VidOR1s(root_dir = root_dir, df = train, transform=utils.get_train_transforms())
-    val_dataset = dataset.VidOR1s(root_dir = root_dir, df = val, transform=utils.get_valid_transforms())
-    test_dataset = dataset.VidOR1s(root_dir = root_dir, df = test_df, transform=None)
+    root_dir = '/data1/yogesh/one-shot-det-vid/dataset/final_split'
+    train_dataset =  dataset.VidORnf(root_dir = root_dir, df = train.reset_index(drop=True), transform=utils.get_train_transforms())
+    val_dataset = dataset.VidORnf(root_dir = root_dir, df = val.reset_index(drop=True), transform=utils.get_valid_transforms())
+    test_dataset = dataset.VidORnf(root_dir = root_dir, df = test_df, transform=None)
 
     train_loader = torch.utils.data.DataLoader(train_dataset, batch_size= config.BATCH_SIZE, shuffle=True, num_workers= config.NUM_W, collate_fn=collate_fn)
     val_loader = torch.utils.data.DataLoader(val_dataset, batch_size= config.BATCH_SIZE, shuffle=False, num_workers= config.NUM_W, collate_fn=collate_fn)
@@ -90,7 +93,7 @@ def run():
         logger.info('|EPOCH {}| TRAIN_LOSS {}| VALID_LOSS {}|'.format(epoch+1,train_loss.avg,valid_loss.avg))
 
         # file.write(f'|EPOCH {epoch+1}| TRAIN_LOSS {train_loss.avg}| VALID_LOSS {valid_loss.avg}\n')
-        torch.save(model.state_dict(), f'/data1/yogesh/one-shot-det-vid/qdetr/checkpoint/QGdetrF_best_no_aug{epoch+1}exp_pre_t.pth')
+        torch.save(model.state_dict(), f'/data1/yogesh/one-shot-det-vid/qdetr/checkpoint/QGdetr_new_data_best_{epoch+1}f_data.pth')
         if valid_loss.avg < best_loss:
             best_loss = valid_loss.avg
             print('Best model found at Epoch {}........Saving Model'.format(epoch+1))

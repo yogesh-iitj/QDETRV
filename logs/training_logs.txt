@@ -108,3 +108,38 @@
 2023-03-27 08:39:36,194 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Num examples = 346558
 2023-03-27 08:39:36,194 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Num Epochs = 100
 2023-03-27 08:39:36,194 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Number of GPUs = 2
+2023-03-31 04:11:40,190 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Training started
+2023-03-31 04:13:22,851 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Training started
+2023-03-31 04:13:56,165 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Training started
+2023-03-31 04:15:06,388 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Training started
+2023-03-31 04:15:08,577 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: ***** Running training *****
+2023-03-31 04:15:08,577 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Num examples = 226651
+2023-03-31 04:15:08,578 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Num Epochs = 50
+2023-03-31 04:15:08,578 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Number of GPUs = 2
+2023-03-31 04:17:36,344 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Training started
+2023-03-31 04:17:38,674 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: ***** Running training *****
+2023-03-31 04:17:38,674 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Num examples = 226651
+2023-03-31 04:17:38,674 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Num Epochs = 50
+2023-03-31 04:17:38,674 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Number of GPUs = 2
+2023-03-31 04:20:05,506 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Training started
+2023-03-31 04:20:07,708 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: ***** Running training *****
+2023-03-31 04:20:07,708 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Num examples = 226651
+2023-03-31 04:20:07,708 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Num Epochs = 50
+2023-03-31 04:20:07,708 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Number of GPUs = 2
+2023-03-31 04:24:46,175 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Training started
+2023-03-31 04:25:13,225 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Training started
+2023-03-31 04:25:15,316 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: ***** Running training *****
+2023-03-31 04:25:15,316 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Num examples = 226651
+2023-03-31 04:25:15,317 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Num Epochs = 50
+2023-03-31 04:25:15,317 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Number of GPUs = 2
+2023-03-31 04:26:41,973 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Training started
+2023-03-31 04:26:44,119 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: ***** Running training *****
+2023-03-31 04:26:44,119 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Num examples = 226651
+2023-03-31 04:26:44,119 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Num Epochs = 50
+2023-03-31 04:26:44,119 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO:   Number of GPUs = 2
+2023-03-31 05:30:41,831 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: |EPOCH 1| TRAIN_LOSS 1.0473173416746109| VALID_LOSS 1.9528585569814836|
+2023-03-31 05:30:42,030 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: Best model found at Epoch 1........Saving Model
+2023-03-31 06:34:37,207 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: |EPOCH 2| TRAIN_LOSS 1.0100026769627966| VALID_LOSS 1.9782049983781886|
+2023-03-31 07:38:36,599 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: |EPOCH 3| TRAIN_LOSS 1.000783587814471| VALID_LOSS 1.984413104938351|
+2023-03-31 08:42:22,806 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: |EPOCH 4| TRAIN_LOSS 0.9938017677781273| VALID_LOSS 2.012659417389142|
+2023-03-31 09:46:12,892 /data1/yogesh/one-shot-det-vid/qdetr/logs INFO: |EPOCH 5| TRAIN_LOSS 0.9896012477539927| VALID_LOSS 1.9617434943512566|
