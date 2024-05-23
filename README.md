@@ -23,10 +23,13 @@ $ python ./dataset/syn_trajectory.py path/to/video_folder path/to/output_csv_ann
 
 # To pre-train the model
 # set config_pre.py
+
 # set CUDA devices
 $ export CUDA_VISIBLE_DEVICES=0,1
+
 # Image-level pretraining
 $ python train_qdetr_pre.py
+
 # video-level pertaining
 $ python train_qdetrv_pre.py
 ```
@@ -42,11 +45,14 @@ $ python ./dataset/2_filter_queries.py
 $ python ./dataset/3_generate_pairs.py
 
 # To train the model
+
 # set config.py
 # set CUDA devices
 $ export CUDA_VISIBLE_DEVICES=0,1
+
 # training image-level QDETR
 $ python train_qdetr.py
+
 # training video-level QDETR
 $ python train_qdetrv.py
 ```
