@@ -2,6 +2,7 @@ import config
 import utils.utils as utils
 from tqdm import tqdm
 import torch
+import torch.nn.functional as F
 
 def train_fn(data_loader, model, criterion, optimizer, device, epoch, scheduler=None):
     model.train()
@@ -71,10 +72,11 @@ def eval_fn(data_loader, model, criterion, device):
             # print(images_t.shape)
             output = model(images_q, images_t)
             loss_dict = criterion(output, targets)
+            l2_loss = F.mse_loss(output['feature'], output['cnn_feature'].view(output['cnn_feature'].size(0), output['cnn_feature'].size(1),-1), reduction='mean')
 
             weight_dict = criterion.weight_dict
 
-            losses = sum(loss_dict[k] * weight_dict[k] for k in loss_dict.keys() if k in weight_dict)
+            losses = sum(loss_dict[k] * weight_dict[k] for k in loss_dict.keys() if k in weight_dict) + l2_loss
 
             summary_loss.update(losses.item(), config.BATCH_SIZE)
             tk0.set_postfix(loss=summary_loss.avg)
