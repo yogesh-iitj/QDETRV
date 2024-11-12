@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>QDETRv: Query-Guided DETR for One-Shot Object Localization in Videos</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- mirror: F0%9F%AA%9E&lt -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/codemirror.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script src="js/video_comparison.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="header" style="text-align: center; margin: auto;">
+        <div class="row" id="title-row" style="max-width: 100%; margin: 0 auto; display: inline-block">
+            <h2 class="col-md-12 text-center" id="title">
+                QDETRv: Query-Guided DETR for One-Shot Object Localization in Videos<br>
+                <small>
+                    AAAI 2024
+                </small>
+            </h2>
+        </div>
+        <div class="row" id="author-row" style="margin:0 auto;">
+            <div class="col-md-12 text-center" style="display: table; margin:0 auto">
+                <table class="author-table" id="author-table" style="table-layout: fixed; width: 85%;">
+                    <tr>
+                        <td>
+                            <a style="text-decoration:none" href="https://yogesh-iitj.github.io/">
+                                Yogesh Kumar
+                            </a>
+                            <br>IIT Jodhpur
+                        </td>
+                        <td>
+                            <a style="text-decoration:none" href="https://scholar.google.com/citations?hl=en&user=Sq9hlQQAAAAJ">
+                                Saswat Subhajyoti Mallick
+                            </a>
+                            <br>IIT Jodhpur
+                        </td>
+                        <td>
+                            <a style="text-decoration:none" href="https://anandmishra22.github.io/">
+                                Anand Mishra
+                            </a>
+                            <br>IIT Jodhpur
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a style="text-decoration:none" href="https://scholar.google.co.in/citations?user=c0nyUPcAAAAJ&hl=en">
+                                Sowmya Rasipuram
+                            </a>
+                            <br>Accenture, India
+                        </td>
+                        <td>
+                            <a style="text-decoration:none" href="https://dblp.org/pid/78/424.html">
+                                Anutosh Maitra
+                            </a>
+                            <br>Accenture, India
+                        </td>
+                        <td>
+                            <a style="text-decoration:none" href="https://scholar.google.com/citations?user=DThywGgAAAAJ&hl=en">
+                                Roshni Ramnani
+                            </a>
+                            <br>Accenture, India
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('author-row').style.maxWidth = document.getElementById("title-row").clientWidth + 'px';
+    </script>
+    <div class="container" id="main">
+        <br>
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <a href="./docs/paper.pdf">Paper</a>
+                /
+                <a href="https://ojs.aaai.org/index.php/AAAI/article/view/28063">Publisher's Page</a>
+                /
+                <a href="https://github.com/yogesh-iitj/QDETRV">Code</a>
+            </div>
+        </div>
+
+
+        <br><br>
+        <div class="row">
+            <div class="text-center">
+                <img src="./img/teaser.jpg" width="80%">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Overview
+                </h3>
+                <p class="text-justify">
+                    In this work, we study one-shot video object localization problem that aims 
+                    to localize instances of unseen objects in the target video using a single 
+                    query image of the object. Toward addressing this challenging problem, we 
+                    extend a popular and successful object detection method, namely DETR 
+                    (Detection Transformer), and introduce a novel approach -- query-guided 
+                    detection transformer for videos (QDETRv). A distinctive feature of QDETRv 
+                    is its capacity to exploit information from the query image and spatio-temporal 
+                    context of the target video, which significantly aids in precisely pinpointing 
+                    the desired object in the video. 
+                </p>
+                <p class="text-justify"></p>
+                    We incorporate cross-attention mechanisms 
+                    that capture temporal relationships across adjacent frames to handle the dynamic 
+                    context in videos effectively. Further, to ensure strong initialization for 
+                    QDETRv, we also introduce a novel unsupervised pretraining technique tailored 
+                    to videos. This involves training our model on synthetic object trajectories with 
+                    an analogous objective as the query-guided localization task. During this 
+                    pretraining phase, we incorporate recurrent object queries and loss functions that 
+                    encourage accurate patch feature reconstruction. These additions enable better 
+                    temporal understanding and robust representation learning. 
+                </p>
+                <p class="text-justify"></p>
+                Our experiments show that the proposed model significantly outperforms the 
+                competitive baselines on two public benchmarks, VidOR and ImageNet-VidVRD, 
+                extended for one-shot open-set localization tasks.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Method
+                </h3>
+                <br>
+                
+                <div class="text-center">
+                    <img src="./img/method.jpg" width="90%">
+                </div> </br>
+                
+                <br>
+                <p class="text-justify">
+                    Illustration of the proposed QDETRv. The process begins with the feature 
+                    extraction of a query image and video frames using a CNN encoder. A 
+                    cross-attention mechanism and dot-product attention are used to create an 
+                    attention map, transforming target frame features. The output is integrated 
+                    into DETR’s encoder, and predictions for bounding boxes are generated using 
+                    the DETR decoder. <strong>[Best viewed in color]</strong>
+                </p>
+            </div>
+        </div>
+            
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Limitations
+                </h3>
+                <br>
+            
+                <div class="text-center">
+                    <img src="./img/limitations.jpg" width="90%">
+                </div> </br>
+                
+                <br>
+                <p class="text-justify">
+                    In the green box results, QDETRv accurately localizes objects from the 
+                    query image on the left. The red box highlights the model's limitations, 
+                    with missed localization in videos where the object is only partially 
+                    visible in the query image.
+                </p>
+            </div>                
+        </div>
+            
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+@inproceedings{kumar2024qdetrv,
+    title={QDETRv: Query-Guided DETR for One-Shot Object Localization in Videos},
+    author={Kumar, Yogesh and Mallick, Saswat and Mishra, Anand and Rasipuram, Sowmya and Maitra, Anutosh and Ramnani, Roshni},
+    booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+    volume={38},
+    number={3},
+    pages={2831--2839},
+    year={2024}
+    }</textarea>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <br>
+                The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a> and <a
+                    href="http://dorverbin.github.io/refnerf">Ref-NeRF</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
