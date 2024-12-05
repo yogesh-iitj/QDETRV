@@ -84,7 +84,7 @@ $ python eval.py
 
 ## Citation
 If you find this repo useful, please cite:
-```
+```bibtex
 @inproceedings{kumar2024qdetrv,
   title={QDETRv: Query-Guided DETR for One-Shot Object Localization in Videos},
   author={Kumar, Yogesh and Mallick, Saswat and Mishra, Anand and Rasipuram, Sowmya and Maitra, Anutosh and Ramnani, Roshni},
@@ -92,6 +92,6 @@ If you find this repo useful, please cite:
   volume={38},
   number={3},
   pages={2831--2839},
-  year={2024}
+  year={2024},
 }
 ```
